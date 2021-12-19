@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import FirstApp from "./FirstApp";
+import './index.css';
 
-const greet = <h1>Hello World</h1>;
-
-ReactDOM.render(greet, document.getElementById("root"));
+ReactDOM.render(<FirstApp />, document.getElementById("root"));
