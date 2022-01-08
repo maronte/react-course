@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import { PropTypes } from "prop-types";
 
 const CounterApp = ({ value }) => {
@@ -25,13 +25,13 @@ const CounterApp = ({ value }) => {
     const [counter, setCounter] = useState(value);
     
     return (
-        <Fragment>
+        <>
             <h1>Counter App</h1>
-            <h2>Counter: { counter }</h2>
+            <h2>Counter: <span id="counterValue">{ counter }</span></h2>
             <button onClick={ handleAdd }>Increment</button>
             <button onClick={ handleReset }>Reset</button>
             <button onClick={ handleSubtract }>Decrement</button>
-        </Fragment>
+        </>
     );
 };
 

@@ -2,14 +2,12 @@ import React, { Fragment } from "react";
 import { PropTypes } from "prop-types";
 // My first functional component.
 
-const name = "John";
-
 // Props always are passed in as an object.
-const FirstApp = ({ greet = "default greet" }) => {
+const FirstApp = ({ greet, name }) => {
 
     return (
         <Fragment>
-            <h1>{ greet } { name } </h1>
+            <h1>{ greet } { name }</h1>
             { /** You can add expressions or variables that are strings or numbers, also if you add
              * an array, it will be rendered as a list with /n as glue, the array also contains same data types.
              * Other objects are not supported. 
@@ -25,7 +23,7 @@ const FirstApp = ({ greet = "default greet" }) => {
 
 // PropTypes are used to validate the props.
 FirstApp.propTypes = {
-    greet: PropTypes.string.isRequired
+    name: PropTypes.string.isRequired
 };
 
 // Also you can add default props. Different from destructuring props, it is property is added the object.

@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CounterApp should shows the CounterApp correctly 1`] = `
+<Fragment>
+  <h1>
+    Counter App
+  </h1>
+  <h2>
+    Counter: 
+    <span
+      id="counterValue"
+    >
+      10
+    </span>
+  </h2>
+  <button
+    onClick={[Function]}
+  >
+    Increment
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Reset
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Decrement
+  </button>
+</Fragment>
+`;

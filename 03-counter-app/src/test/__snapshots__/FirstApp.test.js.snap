@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FirstApp component should show the component 1`] = `
+<Fragment>
+  <h1>
+    Hello
+     
+    John
+  </h1>
+  <p>
+    This is my first React app.
+  </p>
+</Fragment>
+`;
