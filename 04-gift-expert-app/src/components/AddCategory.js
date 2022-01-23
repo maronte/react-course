@@ -13,7 +13,8 @@ export const AddCategory = ({ categories, setCategories }) => {
         }
         // You can receive an arrow function as a parameter in a setState function
         // this function returns the new state and its first argument is the previous state
-        setCategories([...categories, cleanInputValue]);
+        setCategories([cleanInputValue, ...categories]);
+        setInputValue("");
     }
     return (
         <form onSubmit={ handleSubmit }>

@@ -1,12 +1,9 @@
 import { useState } from "react";
 import { AddCategory } from "./components/AddCategory";
+import { GIFGrid } from "./components/GIFGrid";
 
 export const GiftExpertApp = () => {;
-    const [ categories, setCategories ] = useState([
-        'Kimetsu no Yaiba',
-        'One Piece',
-        'Shingeki no Kyojin'
-    ]);
+    const [ categories, setCategories ] = useState(['Kimetsu no Yaiba']);
 
     return (
     <>
@@ -18,7 +15,9 @@ export const GiftExpertApp = () => {;
     <hr/>
     <ul>
         {
-            categories.map(category => <li key={category}>{category}</li>)
+            categories.map(category => (
+                <GIFGrid key={category} category={ category } />
+            ))
         }
     </ul>
     </>
